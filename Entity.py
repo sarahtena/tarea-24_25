@@ -3,12 +3,14 @@ class Entity:
         self.x = x
         self.y = y
         self.image = image
-    def __str__(self):
-        return 
 
+    def __str__(self):
+        return f"Entity({self.x}, {self.y}, {self.image})"
     def move(self, dx, dy):
         self.x += dx
         self.y += dy
+
+    
 
     def draw(self):
         print(f"Drawing entity at ({self.x}, {self.y}) with image {self.image}")
